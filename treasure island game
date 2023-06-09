@@ -1,0 +1,26 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+a=input("left or rigth? ")
+b="left"
+c="rigth"
+if a==c or a!=b:
+    print("Fall into a hole.")
+    print("Game Over.")
+else:
+    d=input("swim or wait? ")
+    if d==str("swim") or d!=str("wait"):
+        print("Attacked by trout.")
+        print("Game over.")
+    else:
+        e=input("Which door? blue, yellow o red ")
+        if e==str("blue"):
+            print("Eating by beasts.")
+            print("Game Over.")
+        elif e==str("yellow"):
+            print("You Win!")
+        elif e==str("red"):
+            print("Burned by fire.")
+            print("Game Over.")
+        else:
+            print("Game Over.")
+    
