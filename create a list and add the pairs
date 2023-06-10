@@ -1,0 +1,10 @@
+x=list(range(0,101))
+y=0
+lista1=[]
+for y in x:
+    if y%2==0:
+        y1=int(y)
+        lista1.append(y1)
+print(lista1)
+k=sum(lista1)
+print(k)
