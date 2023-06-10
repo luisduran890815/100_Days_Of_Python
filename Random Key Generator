@@ -1,0 +1,29 @@
+import string, random 
+print("Welcome to PyPassword Generator!")
+num_let=int(input("How many letters would you like in your password? "))
+num_sym=int(input("How many symbols would you like? "))
+num_num=int(input("How many numbers would you like? "))
+lista1=[]
+sym1=["$","%","*","#","!","&","+","-"]
+for n in range(0,num_let):
+    n=random.choice(string.ascii_letters)
+    lista1.append(str(n))
+#print(lista1)
+for z in range(0,num_num):
+    z=random.randint(0,9)
+    lista1.append(str(z))
+#print(lista1)
+for y in range(0,num_sym):
+    y=random.choice(sym1)
+    lista1.append(str(y))
+#print(lista1)
+lista2=[]
+largo_password=len(lista1)
+for h in range(0,largo_password):
+    h1=lista1[-h]
+    lista2.append(str(h1))
+print(lista2)
+#print(largo_password)
+#print(num_let)
+#print(num_sym)
+#print(num_num)
